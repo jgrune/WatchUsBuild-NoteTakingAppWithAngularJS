@@ -7,22 +7,27 @@ angular.module('NoteWrangler').config(function($routeProvider){
 
     .when('/notes', {
       templateUrl: "assets/templates/notes/index.html",
-      controller: "NotesIndexController",
+      controller: "NotesIndexController"
+    })
+
+    .when('/users', {
+      templateUrl: "assets/templates/users/index.html",
+      controller: "NotesIndexController"
     })
 
     .when('/notes/new', {
       templateUrl: "assets/templates/notes/new.html",
-      controller: "NotesCreateController",
+      controller: "NotesCreateController"
     })
 
     .when('/notes/:id', {
       templateUrl: "assets/templates/notes/show.html",
-      controller: "NotesShowController",
+      controller: "NotesShowController"
     })
 
     .when('/notes/:id/edit', {
       templateUrl: "assets/templates/notes/edit.html",
-      controller: "NotesEditController",
+      controller: "NotesEditController"
     })
 
 });
